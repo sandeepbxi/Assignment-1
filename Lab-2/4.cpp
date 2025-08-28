@@ -34,9 +34,10 @@ string infixToPostfix(string infix) {
     string postfix = "";
     
     for (char ch : infix) {
-        if (isalnum(ch)) {
-            postfix += ch;
-        }
+if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9')) {
+    postfix += ch;
+}
+
         else if (ch == '(') {
             s.push(ch);
         }

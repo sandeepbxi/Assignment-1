@@ -13,7 +13,7 @@ class stack{
     bool isempty(){
         return top==-1;
     }
-    void push(int x){
+    void push(char x){
         arr[++top] = x;
     }
     char pop(){

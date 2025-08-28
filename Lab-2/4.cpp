@@ -45,7 +45,7 @@ string infixToPostfix(string infix) {
                 postfix += s.peek();
                 s.pop();
             }
-            s.pop(); // remove '('
+            s.pop();
         }
         else {
             while (!s.isempty() && precedence(s.peek()) >= precedence(ch)) {
